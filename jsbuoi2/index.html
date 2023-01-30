@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+        <div class="container" style="margin-bottom: 500px;">
+            <p id="txt">Hello world!!</p>
+            <input id="idText" class="form-control w-25" value="cybersoft"/>
+            <br/>
+            <img id="hinhAnh" src="https://picsum.photos/id/1/200" alt="..." width="200"/>
+            <br/>
+
+            <button class="btn btn-success" onclick="handleClick()">Click</button>
+
+
+                <hr>
+
+                <h3>Ví dụ 1: Thay đổi nội dung của thẻ</h3>
+                <h3 id="h3Text">Học javascript tại cybersoft thật đỉnh!!</h3>
+                <p id="pText">Nội dung trước khi thay đổi</p>
+                <button id="btnNhanEmDi" class="btn btn-success" onclick="xuLyVidu1()">Nhấn em đi !!</button>
+
+                <hr>
+
+                <h3>Ví dụ 2: Thay đổi nội dung và css của thẻ như sau: </h3>
+                <div class="alert alert-warning">
+                    <p>Ẩn nội dung của thẻ p đi</p>
+                    <p>Thay đổi nội dung thẻ h3 thành cybersoft frontend</p>
+                    <p>Cho thẻ h3 1 viền border 1px</p>
+                    <p>Cho thẻ h3 có background màu cam</p>
+                    <p>Làm mờ thẻ h3 với opacity</p>
+                </div>
+                <h3 id="h3ViDu2">Học fronted tại Cybersoft thật đỉnh !</h3>
+                <p id="pViDu2">Nội dung thay đổi</p>
+                <button id="btnLamMoNao" class="btn btn-success" onclick="xuLyViDu2()">Làm mờ nào</button>
+
+                <hr>
+                <h3>Ví dụ 3: Xây dựng tính năng cho 2 nút button bật đèn và tắt đèn</h3>
+                <button id="btnBatDen">Bật đèn</button>
+                <img id="hinhAnhViDu3" src="./img/pic_bulboff.gif" alt="...">
+                <button id="btnTatDen">Tắt đèn</button>
+
+                <hr>
+
+                <h3>Bài tập 1: Xây dựng ứng dụng tính tiền</h3>
+                <div class="d-flex justify-content-center" >
+                  <div class="card w-50">
+                    <h3 class="card-header">Tính tiền tip</h3>
+                    <div class="card-body">
+                     <div class="form-group">
+                      <p>Tổng tiền</p>
+                      <input type="text" id="tongTienThanhToan">
+                     </div>
+
+                     <div class="form-group">
+                      <p>Phần trăm tips</p>
+                      <select name="" id="phanTramTip" class="form-control">
+                        <option value="30">Rất tốt</option>
+                        <option value="20">Tốt</option>
+                        <option value="15">Ổn</option>
+                        <option value="10">Tồi</option>
+                        <option value="5">Tệ</option>
+                       
+
+                      </select>
+                     </div>
+
+                     <div class="form-group">
+                      <p>Số nhân viên tip</p>
+                      <input type="text" id="soNhanVienTip">
+                     </div>
+
+                     <div class="card-footer text-center">
+                          <h3>Tiền tip / 1 nhân viên</h3>
+                          <p id="tienTip">0$</p>
+                          <button class="btn btn-danger" id="btnTinh">Tính</button>
+                     </div>
+
+
+                    </div>
+                  </div>
+                </div>
+
+        </div>
+
+
+
+
+
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="./js/index.js">
+        //
+    </script>
+
+
+
+
+
+
+  </body>
+</html>

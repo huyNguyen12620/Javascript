@@ -103,3 +103,68 @@ document.getElementById('btnTinh').onclick = function () {
     tienTip = tongTien * phanTramTip /100 /soNhanVienTip;
     document.getElementById('tienTip').innerHTML = tienTip + '$'
 }
+
+//Ví dụ 4: Tạo nội dung html = javascript (Tạo ra tag section)
+/*
+    createElement: Tạo ra 1 thẻ html (lưu ý: Chưa được hiển thị trên giao diện)
+    appendChild: phương thức chèn 1 thẻ từ javascript lên giao diện html
+    <section id="section_1" class="alert alert-primary mt-2">[innerHTML]</section>
+*/
+
+var id = 1;
+document.getElementById('btnCreateSection').onclick = function () {
+    // //Cách 1 : Tạo ra 1 thẻ html trên giao diện = js
+    // //Tạo ra 1 thẻ section
+    // var tagSection = document.createElement('section');
+    // tagSection.innerHTML = 'Hello cybersoft';
+    // tagSection.className = 'alert alert-primary mt-2';
+    // tagSection.id = 'section_' + id;
+    // id++;
+    // //Chèn 1 thẻ vào giao diện 
+    // var divContent = document.getElementById('content_4');
+    // divContent.appendChild(tagSection);
+    // console.log(tagSection);
+
+    var sHTML = '<section id="section_' +id+ '" class="alert alert-danger mt-2">Hello cybersoft</section>';
+    
+    id++;
+
+    var divContent = document.getElementById('content_4');
+
+    divContent.innerHTML += sHTML;
+    //divContent.innerHTML = divContent.innerHTML + sHTML;
+
+
+}
+
+//Bài 5: Chọn màu sắc để tạo ra các text (thẻ p) với nội dung tương ứng với màu sắc đó
+
+document.getElementById('btnTaoNoiDung').onclick = function(){
+    //Cách 1: Tạo ra string html dựa vào input
+    // input: color: string, text: string 
+    // var color = document.getElementById('color').value;
+    // var text = document.getElementById('txt5').value;
+    // // output:  string html
+    // var sHTML = '';
+    // //progress
+    // sHTML = '<p  style="color:'+color+';">'+text+'</p>';
+
+    // console.log('html',sHTML);
+    // //Hiển thị output
+    // document.getElementById('ketQua_5').innerHTML += sHTML;
+    //Cách 2: Tạo ra 1 tag dựa vào input
+    //input: color:string, text:string
+    var color = document.getElementById('color').value;
+    var text = document.getElementById('txt5').value;
+    //output: tag html
+    var tagP;
+    //progress
+    tagP = document.createElement('p');
+    tagP.innerHTML = text;
+    tagP.style.color = color;
+    //Đưa tagp lên giao diện
+    var divKetQua = document.getElementById('ketQua_5');
+    divKetQua.appendChild(tagP);
+
+}
+

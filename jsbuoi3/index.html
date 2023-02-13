@@ -20,6 +20,108 @@
         <div class="alert alert-success" id="ketQua1">
             
         </div>
+
+        <hr>
+
+        <h3>Ví dụ 2: Cho phép người dùng nhập vào 2 số => in ra số lớn nhất</h3>
+        <div class="from-group row">
+            <div class="col-4">
+              <p>Nhập số thứ 1</p>
+              <input class="form-control" id="soThu1"/>
+            </div>
+            <div class="col-4">
+              <p>Nhập số thứ 1</p>
+              <input class="form-control" id="soThu2"/>
+            </div>
+        </div>
+        <div class="mt-2 form-group">
+          <button class="btn btn-success" id="btnInSoLonNhat">In số lớn nhất</button>
+        </div>
+        <div class="mt alert alert-success" id="ketQua2"></div>
+
+        <hr>
+        <h3>Ví dụ 3: Viết chương trình cho phép người dùng nhập vào điểm toán, điểm lý, điểm hóa -> tính điểm trung bình và xếp loại theo công thức</h3>
+        <p class="alert alert-warning">
+          Ví dụ người dùng nhập vào 5 6 7 -> ĐTB: 6 <br/>
+          DTB bé hơn 5 : in ra học lực yếu<br/>
+          DTB lớn hơn = 5 và bé hơn 6.5: In ra học lực trung bình
+          <br/>
+          DTB lớn hơn = 6.5 và bé hơn 8: In ra học lực khá 
+          <br/>
+          DTB lớn hơn = 8 và bé hơn = 10: In ra học lực giỏi
+        </p>
+
+        <div class="mt-2 form-group row">
+          <div class="col-4">
+            <p>Nhập điểm toán</p>
+            <input class="form-control" id="diemToan">
+          </div>
+          <div class="col-4">
+            <p>Nhập điểm lý</p>
+            <input class="form-control" id="diemLy">
+          </div>
+          <div class="col-4">
+            <p>Nhập điểm hóa</p>
+            <input class="form-control" id="diemHoa">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <button id="btnXepLoai" class="btn btn-success">Xếp loại</button>
+        </div>
+        <div class="alert alert-success" id="ketQua3"></div>
+
+        <hr>
+        <h3>Bài tập 1: Viết chương trình cho phép người dùng nhập vào số giờ làm và lương / 1h. Tính tiền lương theo công thức sau</h3>
+        <p class="alert alert-danger">
+          -Ví dụ người dùng nhập : 40 giờ và lương: 100
+          <br> Tiền lương: 400
+          <br> Ví dụ người dùng nhập 45 giờ và lương: 100
+          <br> Tiền lương: 400 + 5 * 1.5
+        </p>
+        <div class="form-group row">
+          <div class="col-4">
+            <p>Nhập vào số giờ làm</p>
+            <input class="form-control" id="soGioLam">
+          </div>
+          <div class="col-4">
+            <p>Nhập lương / 1h</p>
+            <input class="form-control" id="luongCB">
+          </div>
+        </div>
+        <div class="form-group mt-2">
+          <button id="btnTinhLuong" class="btn btn-success">Tính lương</button>
+        </div>
+        <div class="alert alert-success" id="ketQua_b1"></div>
+
+        <hr>
+        <h3>Bài tập 2: Viết chương trình cho phép người dùng nhập vào số lương, đơn giá của từng sản phẩm. Yêu cầu tính tổng tiền theo công thức sau</h3>
+        <p class="alert alert-warning">
+          <p>Nếu số lượng bé hơn hoặc = 50: Tổng tiền = số lượng * đơn giá</p>
+          <p>Nếu số lượng > 50 và bé hơn 100: Tổng tiền = số lượng * đơn giá * đơn giá được giảm 8%</p>
+          <p>Nếu số lượng lớn hơn 100: Tổng tiền = số lượng * đơn giá * đơn giá được giảm 12%</p>
+        </p>
+        <div class="form-group mt-2 row">
+          <div class="col-4">
+            <p>Nhập tên sản phẩm</p>
+            <input class="form-control" id="tenSanPham"/>
+          </div>
+          <div class="col-4">
+            <p>Nhập số lượng</p>
+            <input class="form-control" id="soLuongSanPham"/>
+          </div>
+
+          <div class="col-4">
+            <p>Nhập đơn giá</p>
+            <input class="form-control" id="donGiaNhap"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <button id="btnTinhTongTien" class="btn btn-primary">
+            Tính tổng tiền
+          </button>
+        </div>
+        <div class="alert alert-primary" id="ketQua_b2"></div>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

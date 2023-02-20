@@ -160,3 +160,91 @@ document.getElementById('btnTinhTongTien').onclick = function(){
     document.getElementById ('ketQua_b2').innerHTML = 'Tên SP: ' + tenSanPham + ' - Tổng tiền nhập: ' + tongTien;
 }  
 
+// Bài tập 3: Viết chương trình cho phép người dùng nhập vào 1 số n từ 1 -> 4. In ra số đó bằng chữ.Lưu ý: Khi người dùng nhập 1 số khác mà không phải 1,2,3,4 => in ra giá trị không hợp lệ !
+
+document.getElementById('btnDocSo').onclick = function(){
+   var soN = Number(document.getElementById('nhapSo').value);
+    var ketQua = ''
+    // Cách 1: Xử lý if else
+
+//    if(soN === 1){
+//     ketQua = 'Một';
+//    }else if(soN ===2){
+//     ketQua ='Hai';
+//    }else if(soN ===3){
+//     ketQua ='Ba'
+//    }else if(soN ===4){
+//     ketQua='Bốn'
+//    }else{
+//     ketQua='Vui lòng nhập giá trị từ 1 -> 4'
+//    }
+
+// Cách 2: Xử lý switch case
+    switch(soN){
+        case 1:{
+            ketQua ='Một';
+        };break;
+        case 2:{
+            ketQua='Hai';
+        };break;
+        case 3:{
+            ketQua='Ba';
+        };break;
+        case 4:{
+            ketQua='Bốn';
+        };break;
+        default:{
+            ketQua ='Vui lòng nhập giá trị từ 1 -> 4';
+        };
+    }
+   document.getElementById('ketQua_b3').innerHTML = ketQua;
+}
+
+document.getElementById('btnInThangNgay').onclick = function () {
+    var soThang = Number(document.getElementById('soThang').value);
+    var ketQua ='';
+
+    switch (soThang){
+        case 1:{
+            ketQua ='tháng 1 có 31 ngày';
+        };break;
+        case 2:{
+            ketQua ='tháng 2 có 20 ngày';
+        };break;
+        case 3:{
+            ketQua ='tháng 3 có 31 ngày';
+        };break;
+        case 4:{
+            ketQua ='tháng 4 có 30 ngày';
+        };break;
+        case 5:{
+            ketQua ='tháng 5 có 31 ngày';
+        };break;
+        case 6:{
+            ketQua='tháng 6 có 30 ngày';
+        };break;
+        case 7:{
+            ketQua='tháng 7 có 31 ngày';
+        };break;
+        case 8:{
+            ketQua='tháng 8 có 31 ngày';
+        };break;
+        case 9:{
+            ketQua ='tháng 9 có 30 ngày';
+        };break;
+        case 10:{
+            ketQua ='tháng 10 có 31 ngày';
+        };break;
+        case 11:{
+            ketQua='tháng 11 có 30 ngày';
+        };break;
+        case 12:{
+            ketQua='tháng 12 có 31 ngày';
+        };break;
+        default:{
+            ketQua='Số tháng không hợp lệ';
+        }
+    }
+
+    document.getElementById('ketQua-4').innerHTML = ketQua;
+}

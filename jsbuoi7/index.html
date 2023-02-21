@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="container" style="margin-bottom: 500px">
+      <h3>Bài tập 1: Tính tổng từ 1 cho đến số người dùng nhập vào</h3>
+      <div class="alert alert-primary">
+        <p>Ví dụ: Người dùng nhập vào số 12</p>
+        <p>In ra kết quả: 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 +12</p>
+      </div>
+      <div class="form-group">
+        <p>Nhập vào 1 số:</p>
+        <input type="text" id="iSo1" />
+      </div>
+
+      <div class="form-group">
+        <button class="btn btn-success" id="btnTinhTong">Tính tổng</button>
+        <div class="alert alert-success mt-2" id="ketQua1"></div>
+      </div>
+
+      <hr />
+      <h3>
+        Bài tập 2: Cho phép người dùng nhập vào 1 giá trị. In ra số div tương
+        ứng với giá trị đó với nội dung hello cybersoft
+      </h3>
+      <div class="form-group">
+        <p>Nhập vào giá trị</p>
+        <input type="text" class="form-control" id="iSo2" />
+        <button class="mt-2 btn btn-success" id="btnInTheDiv">
+          In thẻ Div
+        </button>
+      </div>
+
+      <div id="ketQua2" style="border: 1px solid orange" class="mt-2"></div>
+
+      <hr />
+      <h3>
+        Bài tập 3: Cho phép người dùng nhập vào 1 số. Cho biết số đó có phải là
+        số nguyên tố hay không
+      </h3>
+
+      <div class="form-group">
+        <p>Nhập vào 1 số</p>
+        <input class="form-control" type="text" id="iSo3" />
+        <button class="mt-2 btn btn-success" id="btnKiemTraSoNT">
+          Kiểm tra số NT
+        </button>
+      </div>
+
+      <div class="alert alert-success" id="ketQua3"></div>
+
+      <hr />
+      <h3>
+        Bài tập 4: Cho phép người dùng nhập vào 1 số. Tính tổng các số chẵn từ 2
+        -> số đó (hoặc nhỏ hơn 1 đơn vị)
+      </h3>
+      <div class="form-group">
+        <p>Nhập vào 1 số</p>
+        <input type="text" id="iSo4" />
+        <button class="btn btn-success" id="btnTinhTongSoChan">
+          Tính tổng số chẵn
+        </button>
+      </div>
+      <div class="alert alert-success" id="ketQua4"></div>
+
+
+      <hr/>
+      <h3>Bài tập 5: Cho phép người dùng nhập vào 1 số, in ra giao diện số ngôi sao tương ứng</h3>
+        <div class="alert alert-primary"></div>
+        <p>Ví dụ: Người dùng nhập vào số 3</p>
+
+        <div class="form-group">
+          <p>Nhập vào số lượng</p>
+          <input type="text" class="form-control" id="soSao"/>
+          <button class="mt-2 btn btn-success" id="btnInSao">In sao</button>
+        </div>
+        <div id="ketQua5" class="form-group alert alert-secondary"></div>
+        <div>
+          <i class="fa fa-star text-warning"></i>
+        </div>
+
+        <hr>
+        <h3>Bài tập 6:Cho người dùng nhập vào số hàng số cột => in ra số sao tương ứng</h3>
+        <div class="alert alert-primary">
+          <p>Ví dụ người dùng nhập 3 hàng 5 cột </p>
+        </div>
+        <pre> 
+              * * * * *
+              * * * * *
+              * * * * *  
+        </pre>
+        <div class="form-group row">
+          <div class="col-4">
+          <p>Nhập vào số lượng</p>
+          <input type="text" class="form-control" id="soCot">
+        </div>
+        <div class="col-4">
+          <p>Nhập vào số hàng</p>
+          <input class="form-control" id="soHang">
+        </div>
+        </div>
+        <div class="form-group">
+          <button id="btnInSao_b6" class="btn btn-success">In sao</button>
+        </div>
+        <div class="alert alert-primary" id="ketQua6"></div>
+
+        <hr>
+        <h3>Bài 7: Cho phép người dùng nhập vào 1 số. In ra các số nguyên tố từ 2 đến nhỏ hơn hoặc = số đó</h3>
+        <div class="alert alert-primary">
+          
+          <p>Ví dụ: người dùng nhập vào số 7</p>
+          <p>Kết quả : 2  3 5 7</p>
+        </div>
+
+        <div class="form-group">
+          <p>Nhập số</p>
+          <input type="text" class="form-control w-50" id="nhapSo7"/>
+        </div>
+
+        <div class="form-group">
+          <button id="btnInSoNT">In ra số nguyên tố</button>
+        </div>
+        <div class="form-group mt-2 alert alert-success" id="ketQua7"></div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./lib/method.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

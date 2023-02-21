@@ -43,3 +43,49 @@ document.getElementById("btnChaoHoi").onclick = function () {
    //output: Lời chào :string
     document.getElementById('ketQua2').innerHTML = getName;
   };
+
+
+  //Bài 3: Cho 3 số nguyên. Viết chương trình xuất ra có bao nhiêu số lẻ và bao nhiêu số chẵn.
+       document.getElementById('btnXuatChanLe').onclick = function(){
+        var so1 = Number(document.getElementById('soThu1').value);
+        var so2 = Number(document.getElementById('soThu2').value);
+        var so3 = Number(document.getElementById('soThu3').value);
+
+        var tongSoLe =0;
+        var tongSoChan =0;
+
+        if(so1% 2==0){
+            tongSoChan +=1
+        }else{
+            tongSoLe +=1
+        }
+
+        if(so2 % 2==0){
+            tongSoChan +=1;
+        }else{
+            tongSoLe +=1
+        }
+
+        if(so3 % 2==0){
+            tongSoChan +=1;
+        }else{
+            tongSoLe +=1
+        }
+
+       
+
+        document.getElementById('ketQua3').innerHTML = 'Tổng số chẵn: '+ tongSoChan + 'Tổng số lẻ: '+ tongSoLe;
+       }
+       
+       document.getElementById('btnXuatTamGiac').onclick = function(){
+            var a = Number(document.getElementById('soA').value);
+            var b = Number(document.getElementById('soB').value);
+            var c = Number(document.getElementById('soC').value);
+
+            ketQua = '';
+            if(a === b && a === c && b ===c){
+                ketQua = 'Tam giác cân';
+            }else if(a !== b && a ){
+
+            }
+       }

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container" style="margin-bottom: 500px;">
+      <h3>
+        Bài 1:Cho người dùng nhập vào 3 số nguyên. Viết chương trình xuất 3 số
+        theo thứ tự tăng dần
+      </h3>
+      <h2>Nhập vào 3 số nguyên</h2>
+
+      <div class="form-group">
+        <div class="row">
+          <div class="col-4">
+            <p>Số nguyên thứ 1</p>
+            <input class="form-control w-50" type="text" name="" id="so1" />
+          </div>
+
+          <div class="col-4">
+            <p>Số nguyên thứ 2</p>
+            <input class="form-control w-50" type="text" name="" id="so2" />
+          </div>
+          <div class="col-4">
+            <p>Số nguyên thứ 3</p>
+            <input class="form-control w-50" type="text" name="" id="so3" />
+          </div>
+        </div>
+        <br />
+        <button class="btn btn-success" id="btnXuatSo">Xuất số</button>
+
+        <p id="ketQua1" class="alert alert-success mt-2"></p>
+      </div>
+
+      <hr />
+      <h3>
+        Bài 2: Viết chương trình “Chào hỏi” các thành viên trong gia đình với các đặc điểm. Đầu tiên máy sẽ hỏi ai sử dụng máy. Sau đó dựa vào câu trả lời và đưa ra lời chào phù hợp. Giả sử trong gia đình có 4 thành viên:
+          Bố (B), Mẹ (M), anh Trai (A) và Em gái (E)
+      </h3>
+            <h4>Ai đang sử dụng máy?</h4>
+            <div class="form-group">
+                <select id="nameFami">
+                    <option value="">Chọn thành viên</option>
+                    <option value="B" >Ba</option>
+                    <option value="M" >Mẹ</option>
+                    <option value="A" >Anh trai</option>
+                    <option value="E">Em gái</option>
+                </select>
+                <button class="btn btn-success" id="btnChaoHoi">Chào hỏi</button>
+
+                    <p class="alert alert-success mt-2" id="ketQua2"></p>
+            </div>
+
+            <hr>
+            <h3>Cho 3 số nguyên . Viết chương trình xuất ra có bao nhiêu số chẵn và bao nhiêu số lẻ</h3>
+
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-4">
+                    <input id="soThu1">
+                  </div>
+
+                  <div class="col-4">
+                    <input id="soThu2">
+                  </div>
+
+                  <div class="col-4">
+                    <input id="soThu3">
+                  </div>
+                </div>
+                <button id="btnTinh" class="btn btn-success mt-2">Xuất chẵn lẻ</button>
+              </div>
+              <div class="alert alert-success" id="ketQua3"></div>
+
+              <hr>
+              <h3>Viết chương trình cho nhập 3 cạnh của tam giác. Hãy cho biết đó là tam giác gì?
+                • Ví dụ: a=2, b=2, c=1 => Tam giác cân
+                • a = 3, b=3 c=3 => Tam giác đều
+                • a = 3, b = 4, c=5 => Tam giác vuông (đinh lý Pytago)</h3>
+
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-4">
+                      <input id="canh1">
+                    </div>
+
+                    <div class="col-4">
+                      <input id="canh2">
+                    </div>
+
+                    <div class="col-4">
+                      <input id="canh3">
+                    </div>
+                  </div>
+                    <button class="btn btn-success mt-2" id="xuatTamGiac">Xuất tam giác</button>
+                  <div class="alert alert-success mt-2" id="ketQua4"></div>
+                </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
